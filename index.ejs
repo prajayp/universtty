@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #a8d6d5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            padding: 20px;
+        }
+        .logo img {
+            width: 100px;
+        }
+        h2 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .input-container {
+            margin: 20px 0;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-btn {
+            width: 95%;
+            padding: 10px;
+            background-color: #ffa31a;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #e69500;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../image/image.png" alt="University Logo" style="width: 120px; height: auto;">
+        </div>
+        <h2>Sign In</h2>
+        <form action="/login" method="POST"> <!-- Updated action -->
+            <div class="input-container">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <button class="login-btn" type="submit">LOGIN</button>
+        </form>
+        <div class="footer">
+            @ 2025 Amrita chat.
+        </div>
+    </div>
+</body>
+</html>
